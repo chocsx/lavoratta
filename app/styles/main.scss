@@ -1,0 +1,149 @@
+$icon-font-path: '../fonts/';
+$verde: #9da53b;
+$cinza: #5b5b5f;
+$cinza-rodape: #c3c5ca;
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/css-hamburgers/_sass/hamburgers/hamburgers.scss";
+// endbower
+
+/* Space out content a bit */
+body {
+  background-color: #edeef0;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+}
+h1,h2,h3,h4{
+  margin: 0;
+  padding: 0;
+  color: $verde; 
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+p{ 
+  text-align: center;
+  margin: 0;
+}
+
+/* Custom page header */
+.hamburger{
+  float: right;
+}
+.header {
+  background-color: $verde;
+  margin: 0;
+  padding: 24px 0;
+  nav{
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      border: 1px solid red;
+      li{
+        a{
+          color: #fff;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+.slider{
+  height: 400px;
+  div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    background-position: center center;
+  }
+}
+.content{
+  padding: 60px 0;
+}
+.noticias{
+  ul{
+    border: 1px solid red;
+  }
+}
+.servicos{
+  padding: 60px 0;
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li{
+      margin: 15px 0;
+      a{
+        display: block;
+        height: 80px;
+        background-color: #f9b510;
+        background-blend-mode: multiply;
+        background-position: center center;
+        color: #FFF;
+        h3{
+          font-size: 16px;
+          text-transform: uppercase;
+          padding: 20px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}
+.orcamento{
+  form{
+    padding: 20px 0;
+    color: #c3c5ca;
+    input, textarea{
+      display: block;
+      width: 100%;
+      margin: 15px 0;
+      padding: 5px 10px;
+      border: 1px solid #d8dade;
+    }
+    .btn{
+      background-color: #fdb913;
+      color: #FFF;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 10px 0;
+      max-width: 220px;
+      margin: 0 auto;
+    }
+  }
+}
+footer{
+  padding: 30px 0;
+  background-color: $cinza-rodape;
+  color: $cinza;
+  p{
+    text-align: left;
+  }
+  .logo-footer{
+    display: block;
+    margin: 0 auto;
+  }
+  nav{ 
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;  
+      a{
+        color: $cinza;
+      }
+    }
+  }
+}
+.assinatura{
+  padding: 30px 0 15px;
+  background-color: #3a3a3b;
+  color: #FFF;
+  p{
+    max-width: 320px;
+    margin: 0 auto;  
+  }
+}
