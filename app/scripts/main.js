@@ -1,4 +1,6 @@
 $(document).ready(function(){
-	var height = $('.header').height();
-	console.log(height);
+	$('.hamburger').click(function() {
+			 $('nav ul').toggleClass('open');
+			 $('.hamburger').toggleClass('is-active');
+	 });
 })

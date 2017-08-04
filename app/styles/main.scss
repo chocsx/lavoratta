@@ -2,6 +2,7 @@ $icon-font-path: '../fonts/';
 $verde: #9da53b;
 $cinza: #5b5b5f;
 $cinza-rodape: #c3c5ca;
+$hamburger-layer-color: #333;
 
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
@@ -32,24 +33,49 @@ p{
 .header {
   background-color: $verde;
   margin: 0;
-  padding: 24px 0;
+  padding: 14px 0;
   nav{
     ul{
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
       display: flex;
       justify-content: space-between;
+      list-style-type: none;
+      margin: 13px 0;
+      padding: 0;
       @media (max-width: 768px){
         display: none;
       }
+      &.open {
+        position: absolute;
+        display: block;
+        background-color: $verde;
+        transition: all .4s linear;
+        padding: 0;
+        top: 60px;
+        right: 0;
+        left: 0
+      }
       li{
+        display: flex;
+        align-self: center;
         a{
           color: #fff;
           font-weight: normal;
           font-size: 14px;
           text-transform: uppercase;
+          @media (max-width: 768px){
+            display: block;
+            padding: 15px 0;
+            margin: 0 auto;
+          }
+          img{
+            margin-right: 10px;
+          }
+          &:hover{
+            text-decoration: none;
+          }
+
         }
+
       }
     }
   }
