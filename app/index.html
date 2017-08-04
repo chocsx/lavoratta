@@ -28,7 +28,7 @@
     <!--[if IE]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
+
     <header class="header">
       <div class="container">
         <div class="row">
@@ -60,7 +60,7 @@
     <main class="banners">
       <div class="slider">
         <div style="background-image: url('./images/slide1.jpg');">
-          
+
         </div>
       </div>
     </main>
@@ -80,12 +80,62 @@
                     <a href="javascript:;" class="btn">Leia Mais</a>
                   </div>
                 </li>
+                <li class="noticia">
+                  <div class="noticia__imagem" style="background-image: url('./images/slide1.jpg');"></div>
+                  <div class="noticia__content">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, non.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, aut! Quam autem quia est ullam fugit modi aspernatur aliquam sequi?</p>
+                    <span>Publicado em 03/06/2017</span>
+                    <a href="javascript:;" class="btn">Leia Mais</a>
+                  </div>
+                </li>
+                <li class="noticia">
+                  <div class="noticia__imagem" style="background-image: url('./images/slide1.jpg');"></div>
+                  <div class="noticia__content">
+                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, non.</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, aut! Quam autem quia est ullam fugit modi aspernatur aliquam sequi?</p>
+                    <span>Publicado em 03/06/2017</span>
+                    <a href="javascript:;" class="btn btn-green">Leia Mais</a>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
-          <div class="col-sm-6 col-xs-12">
-            <h2>Cotações</h2>
-
+          <div class="col-sm-4 col-xs-12">
+            <div class="cotacoes">
+              <h2>Cotações</h2>
+              <ul>
+                <li class="cotacao">
+                    <h3>Cotação do Arroz</h3>
+                    <h2>R$ 42,50</h2>
+                    <span>Publicado em 03/06/2017 -  Fonte: UOL</span>
+                </li>
+                <li class="cotacao">
+                    <h3>Cotação da Soja</h3>
+                    <h2>US$/BU 923,50</h2>
+                    <span>Publicado em 03/06/2017 -  Fonte: UOL</span>
+                </li>
+                <li class="cotacao">
+                    <h3>Cotação do Dólar</h3>
+                    <h2>R$ 3,25</h2>
+                    <span>Publicado em 03/06/2017 -  Fonte: UOL</span>
+                </li>
+              </ul>
+            </div>
+            <div class="news">
+              <h2>Newsletter</h2>
+              <p>
+                Cadastre-se em nossa newsletter e receba todas as nossas notícias e informações no seu e-mail.
+              </p>
+              <form action="post-news.php" method="post" name="formNews">
+                <div class="form-group">
+                  <input type="email" name="email" placeholder="Informe o seu e-mail" class="form-control">
+                </div>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-green"> CADASTRAR </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -128,7 +178,7 @@
     <script src="/bower_components/modernizr/modernizr.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
-    
+
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->

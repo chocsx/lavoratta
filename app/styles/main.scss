@@ -17,13 +17,11 @@ body {
 h1,h2,h3,h4{
   margin: 0;
   padding: 0;
-  color: $verde; 
+  color: $verde;
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: bold;
 }
-p{ 
-  text-align: center;
+p{
   margin: 0;
 }
 
@@ -42,23 +40,29 @@ p{
       padding: 0;
       display: flex;
       justify-content: space-between;
-      border: 1px solid red;
+      @media (max-width: 768px){
+        display: none;
+      }
       li{
         a{
           color: #fff;
           font-weight: normal;
+          font-size: 14px;
+          text-transform: uppercase;
         }
       }
     }
   }
 }
 .slider{
-  height: 400px;
   div{
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
     background-position: center center;
+    @media (max-width: 768px){
+      height: 200px;
+    }
   }
 }
 .content{
@@ -66,7 +70,123 @@ p{
 }
 .noticias{
   ul{
-    border: 1px solid red;
+    margin: 30px 0 ;
+    padding: 0;
+    .noticia{
+      margin: 40px 0;
+      display: flex;
+      flex-direction: row;
+      @media (max-width: 768px){
+        flex-direction: column;
+      }
+      &__imagem{
+        height: 150px;
+        width: 150px;
+        @media (max-width: 768px){
+          height: 280px;
+          width: 280px;
+          display: block;
+          margin: 0 auto;
+        }
+        background-size: cover;
+        background-position: center;
+      }
+      &__content{
+        flex: 2;
+        padding: 0 20px 0;
+        font-size: 14px;
+        text-align: left;
+        @media (max-width: 768px){
+          text-align: center;
+          padding: 20px;
+        }
+        h3{
+          font-size: 14px;
+          line-height: 1.2;
+          color: $cinza;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        p{
+          margin: 10px 0;
+        }
+        span{
+          font-size: 12px;
+          font-style: italic;
+          float: left;
+          @media (max-width: 768px){
+            float: none;
+            display: block;
+          }
+        }
+        a.btn{
+          background-color: $verde;
+          color: #FFF;
+          text-transform: uppercase;
+          display: inline-block;
+          max-width: 150px;
+          float: right;
+          transition: all .4s ease;
+          @media (max-width: 768px){
+            float: none;
+            display: block;
+            width: 100%;
+            margin: 20px auto;
+          }
+          &:hover{
+            transform: scale(1.1);
+            box-shadow: 1px 2px 10px #666;
+          }
+        }
+      }
+    }
+  }
+}
+.btn-green{
+  background-color: $verde;
+  color: #FFF;
+  text-transform: uppercase;
+  display: inline-block;
+  max-width: 150px;
+  float: right;
+  transition: all .4s ease;
+  &:hover{
+    color: #FFF;
+    transform: scale(1.1);
+    box-shadow: 1px 2px 10px #666;
+  }
+}
+.cotacoes{
+  ul{
+    margin: 30px 0;
+    padding: 0;
+    list-style: none;
+    .cotacao{
+      margin: 60px 0;
+      h2{
+        font-size: 24px;
+        line-height: 1.5;
+        font-weight: bold;
+        margin: 8px 0;
+      }
+      h3{
+        font-size: 14px;
+        color: $cinza;
+        font-weight: bold;
+      }
+      span{
+        font-size: 12px;
+        font-style: italic;
+        float: left;
+      }
+    }
+  }
+}
+.news{
+  p{
+    margin: 20px 0;
+    font-size: 14px;
+    color: $cinza;
   }
 }
 .servicos{
@@ -122,16 +242,24 @@ footer{
   color: $cinza;
   p{
     text-align: left;
+    @media (max-width: 768px){
+      text-align: center;
+      margin: 0 0 20px  ;
+    }
   }
   .logo-footer{
     display: block;
     margin: 0 auto;
   }
-  nav{ 
+  nav{
+    @media (max-width: 768px){
+      text-align: center;
+      margin: 20px 0;
+    }
     ul{
       list-style-type: none;
       margin: 0;
-      padding: 0;  
+      padding: 0;
       a{
         color: $cinza;
       }
@@ -142,8 +270,11 @@ footer{
   padding: 30px 0 15px;
   background-color: #3a3a3b;
   color: #FFF;
+  @media (max-width: 768px){
+    text-align: center;
+  }
   p{
     max-width: 320px;
-    margin: 0 auto;  
+    margin: 0 auto;
   }
 }
