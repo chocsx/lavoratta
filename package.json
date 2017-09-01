@@ -42,5 +42,8 @@
         "single"
       ]
     }
+  },
+  "dependencies": {
+    "gulp-babel": "^6.1.2"
   }
 }
